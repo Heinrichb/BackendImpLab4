@@ -1,0 +1,1 @@
+C:\MongoDB\bin\mongod --dbpath "C:\wamp\www\Data"
