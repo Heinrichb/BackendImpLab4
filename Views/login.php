@@ -8,16 +8,31 @@
     include DIR_TMPL . '/header.php';
     include DIR_TMPL . '/navbar.php'; ?>
 
-    <h3>Login</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-sm-4"></div>
+        <div class="col-xs-6 col-sm-4">
+            <h3>Login</h3>
 
-    <form method="post">
-        <label for="username">Username: </label>
-        <input type="text" name="username"/>
-        <br>
-        <label for="password">Password: </label>
-        <input type="password" name="password"/>
-        <br>
-        <input type="submit" value="register"/>
-    </form>
+            <form method="post">
+
+                <div class="form-group">
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" class="form-control"/>
+                </div>
+                <div class="col-xs-6 col-sm-4"></div>
+                <div class="col-xs-6 col-sm-4">
+                    <input type="submit" value="Login" class="btn btn-default"/>
+                </div>
+                <div class="col-xs-6 col-sm-4"></div>
+            </form>
+        </div>
+        <div class="col-xs-6 col-sm-4"></div>
+    </div>
+</div>
 
 <?php include DIR_TMPL . '/footer.php'; ?>

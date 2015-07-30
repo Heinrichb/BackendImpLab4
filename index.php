@@ -29,8 +29,7 @@ if(session_status() == PHP_SESSION_NONE) { session_start(); }
 include DIR_SYS . '/router.php';
 include DIR_SYS . '/config.routes.php';
 
-$m = new MongoClient(); // connect
-$db = $m->selectDB("example");
+
 
 if ($ctrl = Router::controller()) { include $ctrl; }
 else { include('404.php'); }
