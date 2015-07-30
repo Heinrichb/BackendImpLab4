@@ -5,4 +5,4 @@ $scripts = [];
 $styles = [];
 $navPage = 'login';
 
-include DIR_VIEW.'/index.php';
+include DIR_VIEW.'/login.php';

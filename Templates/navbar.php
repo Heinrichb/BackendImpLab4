@@ -13,6 +13,8 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li <?php if($navPage === "index") echo 'class="active"'; ?>><a href="/">Home</a></li>
+                    <li <?php if($navPage === "login") echo 'class="active"'; ?>><a href="/login">Log In</a></li>
+                    <li <?php if($navPage === "register") echo 'class="active"'; ?>><a href="/register">Register</a></li>
                 </ul>
             </div>
         </div>

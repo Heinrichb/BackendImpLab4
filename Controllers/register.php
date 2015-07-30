@@ -3,6 +3,6 @@
 $head['title'] = 'Registration';
 $scripts = [];
 $styles = [];
-$navPage = 'index';
+$navPage = 'register';
 
-include DIR_VIEW . '/index.php';
+include DIR_VIEW . '/register.php';

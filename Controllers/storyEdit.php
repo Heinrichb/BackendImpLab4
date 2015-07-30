@@ -3,6 +3,6 @@
 $head['title'] = 'Editing';
 $scripts = [];
 $styles = [];
-$navPage = 'dashboard';
+$navPage = 'storyEdit';
 
-include DIR_VIEW.'/index.php';
+include DIR_VIEW.'/storyEdit.php';
