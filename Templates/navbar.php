@@ -13,6 +13,7 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li <?php if($navPage === "index") echo 'class="active"'; ?>><a href="/">Home</a></li>
+                    <li <?php if($navPage === "storyList") echo 'class="active"'; ?>><a href="/storyList">Stories</a></li>
                     <?php if(isset($_SESSION['user'])) {
                         echo '<li';
                         if ($navPage === "storyCreate") echo 'class="active"';
