@@ -15,6 +15,7 @@ $head['title'] = array_key_exists('title', $head)
     <title><?php echo $head['title']; ?> SITE NAME</title>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/main.css" type="text/css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />

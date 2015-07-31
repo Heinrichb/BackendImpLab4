@@ -17,8 +17,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $password = hash("sha512", $saltedPass);
 
         $userCol->insert(array('username' => $username,
-                               'password' => $password,
-                               'salt' => $salt));
+            'password' => $password,
+            'salt' => $salt));
         header("Location: /login");
     }
 } else include DIR_VIEW.'/register.php';

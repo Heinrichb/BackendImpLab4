@@ -1,0 +1,34 @@
+div.main-Content {
+    max-width: 600px;
+    margin: auto;
+}
+
+div.main-Content > h3{
+    text-align: center;
+}
+
+div.form-group > textarea.storyText {
+    margin: auto;
+    display:block;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+form.register-form {
+    max-width: 300px;
+    margin: auto;
+}
+
+form.register-form > input.btn {
+    text-align: center;
+}
+
+div.btnHolder {
+    text-align: center;
+}#cont{
+    text-align: center;
+}
+
+.panel{
+    margin-top: 10px;
+}
