@@ -15,6 +15,7 @@
                     <li <?php if($navPage === "index") echo 'class="active"'; ?>><a href="/">Home</a></li>
                     <li <?php if($navPage === "login") echo 'class="active"'; ?>><a href="/login">Log In</a></li>
                     <li <?php if($navPage === "register") echo 'class="active"'; ?>><a href="/register">Register</a></li>
+                    <li <?php if($navPage === "storyCreate") echo 'class="active"'; ?>><a href="/create">Create Story</a></li>
                 </ul>
             </div>
         </div>

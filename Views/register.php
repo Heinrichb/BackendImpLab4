@@ -46,5 +46,3 @@
     <div class="col-xs-6 col-sm-4"></div>
     </div>
 </div>
-
-<?php include DIR_TMPL . '/footer.php'; ?>
