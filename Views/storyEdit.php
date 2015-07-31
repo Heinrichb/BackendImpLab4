@@ -8,6 +8,7 @@
     include DIR_TMPL . '/header.php';
     include DIR_TMPL . '/navbar.php'; ?>
 
+    <div class="container main-Content">
     <h3>Edit Story</h3>
     
     <form method="post">
