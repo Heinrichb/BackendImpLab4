@@ -6,6 +6,7 @@ Router::add('#^/index(|.htm|.html|.php)$#', DIR_CTRL.'/index.php', Router::ROUTE
 // Registration Routes
 Router::add('/register', DIR_CTRL.'/register.php');
 Router::add('/login', DIR_CTRL.'/login.php');
+Router::add('/logout', DIR_FUNC.'/logout.php');
 
 Router::add('/dashboard', DIR_CTRL.'/dashboard.php');
 Router::add('/edit/([a-zA-Z\d,])+', DIR_CTRL.'/storyEdit.php');

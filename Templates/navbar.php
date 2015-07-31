@@ -14,6 +14,23 @@
                 <ul class="nav navbar-nav">
                     <li <?php if($navPage === "index") echo 'class="active"'; ?>><a href="/">Home</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <?php
+                    if(isset($_SESSION['user'])) {
+                        echo '<li><a>Welcome, '.$_SESSION['user'].'</a></li>';
+                        echo '<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>';
+                    } else {
+                        echo '<li';
+                        // Register active check
+                        if($navPage === "register") echo ' class="active"';
+                        echo '><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						      <li';
+                        // Login active check
+                        if($navPage === "login") echo ' class="active"';
+                        echo '><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
+                    }
+                    ?>
+                </ul>
             </div>
         </div>
     </nav>

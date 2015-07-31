@@ -6,6 +6,7 @@ header("Expires: Sat, 14 Jan 1995 05:00:00 GMT");
 define('DIR_WEB', dirname(__FILE__));
 define('DIR_SYS', DIR_WEB.'/System');
 define('DIR_CTRL', DIR_WEB.'/Controllers');
+define('DIR_FUNC', DIR_WEB.'/Functions');
 define('DIR_TMPL', DIR_WEB.'/Templates');
 define('DIR_VIEW', DIR_WEB.'/Views');
 define('DIR_ASSETS', '/Assets');
@@ -19,4 +20,9 @@ define('DB_HOST', '');
 define('DB_NAME', '');
 define('DB_USER', '');
 define('DB_PASSWORD', '');
+//}}}
+//{{{ Defining mongoDB Connection
+$m = new MongoClient();
+$db = $m -> selectDB("lab4");
+$userCol = $db -> users;
 //}}}
