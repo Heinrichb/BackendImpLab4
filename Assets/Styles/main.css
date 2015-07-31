@@ -25,4 +25,10 @@ form.register-form > input.btn {
 
 div.btnHolder {
     text-align: center;
+}#cont{
+    text-align: center;
+}
+
+.panel{
+    margin-top: 10px;
 }

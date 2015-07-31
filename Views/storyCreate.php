@@ -3,7 +3,7 @@ include DIR_TMPL . '/navbar.php'; ?>
 
 <div class="container main-Content">
 
-<h3>Create Story</h3>
+<h3>Create a Story</h3>
 
 <form method="post">
     <div class="form-group">
