@@ -2,31 +2,17 @@
 include DIR_TMPL . '/navbar.php'; ?>
     <!-- Main Content -->
     <section class="container">
-        <h1 class="text-center">Lab 4 Login</h1>
-        <div class="col-sm-2 hidden-xs"></div>
-        <div class="col-sm-8">
-            <form class="form-horizontal" role="form" method="post" action="<?php echo htmlspecialchars("/login");?>">
-                <div class="form-group">
-                    <label class="control-label col-sm-3" for="username">Username:</label>
-                    <div class="col-sm-7">
-                        <input class="form-control" type="text" name="username" placeholder="Enter Username" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-3" for="password">Password:</label>
-                    <div class="col-sm-7">
-                        <input class="form-control" type="password" name="password" placeholder="Enter Password" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-9">
-                        <input class="btn btn-primary loginBtn hidden-xs" type="submit" name="submit" value="Login" />
-                        <input class="btn btn-primary loginBtn hidden-md hidden-lg hidden-sm btn-block" type="submit" name="submit" value="Login" />
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col-sm-2 hidden-xs"></div>
+        <h3>Existing User Login</h3>
+        <form method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary pull-right">Submit</button>
+        </form>
     </section>
 <?php include DIR_TMPL . '/footer.php'; ?>

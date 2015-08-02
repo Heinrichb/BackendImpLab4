@@ -5,4 +5,7 @@ $scripts = [];
 $styles = [];
 $navPage = 'dashboard';
 
-include DIR_VIEW . '/index.php';
+$post = array("content" => "", "poster_id" => 0101);
+$cursor = $postCol -> find();
+
+include DIR_VIEW . '/dashboard.php';

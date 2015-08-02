@@ -25,4 +25,5 @@ define('DB_PASSWORD', '');
 $m = new MongoClient();
 $db = $m -> selectDB("lab4");
 $userCol = $db -> users;
+$postCol = $db -> posts;
 //}}}

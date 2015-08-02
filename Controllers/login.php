@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if($password !== $user['password']) header("Location: /login");
     else {
         $_SESSION["user"] = $user['username'];
-        $_SESSION["userID"] = $user['_ID'];
+        $_SESSION["userID"] = $user['_id'];
         header("Location: /dashboard");
     }
 } else include DIR_VIEW.'/login.php';

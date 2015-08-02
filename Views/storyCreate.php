@@ -7,7 +7,11 @@ include DIR_TMPL . '/navbar.php'; ?>
 
 <form method="post">
     <div class="form-group">
-        <label for="addedText">Story Start: </label>
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" placeholder="Story Title" required autofocus>
+    </div>
+    <div class="form-group">
+        <label for="storyText">Story Start: </label>
         <br>
         <textarea class="storyText form-control" cols="60" rows="10" name="storyText"></textarea>
     </div>

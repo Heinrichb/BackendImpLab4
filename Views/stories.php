@@ -1,18 +1,17 @@
 <?php
 
-$head['title'] = 'Story Creation';
+$head['title'] = 'View All Stories';
 $scripts = [];
 $styles = [];
-$navPage = 'storyCreate';
+$navPage = 'stories';
 
-$postCol -> remove();
 if(isset($_SESSION['user'])) {
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $title = $_POST['title'];
+
         $content = $_POST['storyText'];
         $poster_id = $_SESSION['userID'];
-        $post = array("title" => $title, "content" => $content, "poster_id" => $poster_id, "additions" => [] );
+        $post = array("content" => $content, "poster_id" => $poster_id);
         $postCol -> insert($post);
 
 

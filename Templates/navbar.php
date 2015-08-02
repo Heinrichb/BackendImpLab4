@@ -1,41 +1,49 @@
-<div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <header class="navbar-header">
-                <button type="button" class="navbar-toggle" data-target="#navbar-collapse" data-toggle="collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">NAVBAR HEADER</a>
-            </header>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li <?php if($navPage === "index") echo 'class="active"'; ?>><a href="/">Home</a></li>
-                    <li <?php if($navPage === "login") echo 'class="active"'; ?>><a href="/login">Log In</a></li>
-                    <li <?php if($navPage === "register") echo 'class="active"'; ?>><a href="/register">Register</a></li>
-                    <li <?php if($navPage === "storyCreate") echo 'class="active"'; ?>><a href="/create">Create Story</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <?php
-                    if(isset($_SESSION['user'])) {
-                        echo '<li><a>Welcome, '.$_SESSION['user'].'</a></li>';
-                        echo '<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>';
-                    } else {
-                        echo '<li';
-                        // Register active check
-                        if($navPage === "register") echo ' class="active"';
-                        echo '><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-						      <li';
-                        // Login active check
-                        if($navPage === "login") echo ' class="active"';
-                        echo '><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
-                    }
-                    ?>
-                </ul>
-            </div>
+<nav class="navbar navbar-default">
+    <div class="nav-container">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button>
+            <a href="/" class="navbar-brand">NAVBAR HEAER</a>
         </div>
-    </nav>
-</div>
-<main>
+        <ul class="nav navbar-nav">
+            <?php
+            if(isset($_SESSION['user'])) {
+                echo '<li';
+                if ($navPage === "dashboard")  echo ' class="active"';
+                echo '><a href="/dashboard">Dashboard</a></li>';
+
+                echo '<li';
+                if ($navPage === "storyCreate")  echo ' class="active"';
+                echo '><a href="/create">Create Story</a></li>';
+
+                echo '<li';
+                if ($navPage === "stories")  echo ' class="active"';
+                echo '><a href="/stories">Stories</a></li>';
+            }
+            ?>
+        </ul>
+        <div id="navbar-main" class="navbar-collapse collapse">
+            <!--            <ul class="nav navbar-nav navbar-right">-->
+            <?php
+            if(isset($_SESSION['user'])) {
+                echo '<a href="/logout" class="navbar-text pull-right"><span class="glyphicon glyphicon-log-out"></span> Logout</a>';
+                echo '<p class="navbar-text pull-right">Welcome, <a href="/dashboard" class="pull-right">' . $_SESSION['user'] . '</a></p>';
+
+            } else {
+                // Register active check
+                echo '<a href="/register" class="navbar-text pull-right';
+                if($navPage === "register")  echo ' active';
+                echo '"><span class="glyphicon glyphicon-user"></span> Sign Up</a>';
+
+                // Login active check
+                echo '<a href="/login" class="navbar-text pull-right';
+                if($navPage === "login") echo ' active';
+                echo '"><span class="glyphicon glyphicon-log-in"></span> Log In</a>';
+            }
+            ?>
+            <!--            </ul>-->
+        </div>
+    </div>
+</nav>
