@@ -1,22 +1,18 @@
-<?php
+<?php include DIR_TMPL.'/header.php';
+include DIR_TMPL.'/navbar.php'; ?>
+   
+<section class="container">
+    <h1 class="text-center">Story List</h1>
+    <?php
+    foreach ($cursor as $post) {
+        echo "<p>" . $post["title"] . "<br/>" . $post["content"] . '<br/>';
 
-$head['title'] = 'View All Stories';
-$scripts = [];
-$styles = [];
-$navPage = 'stories';
+        print_r($post["additions"]);
 
-if(isset($_SESSION['user'])) {
-
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-        $content = $_POST['storyText'];
-        $poster_id = $_SESSION['userID'];
-        $post = array("content" => $content, "poster_id" => $poster_id);
-        $postCol -> insert($post);
+        echo '</p>';
+    }
+    ?>
+</section>
 
 
-        header("Location: /dashboard");
-    } else include DIR_VIEW . '/storyCreate.php';
-} else {
-    header("Location: /login");
-}
+<?php include DIR_TMPL.'/footer.php'; ?>

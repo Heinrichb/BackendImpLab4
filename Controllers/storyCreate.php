@@ -5,7 +5,7 @@ $scripts = [];
 $styles = [];
 $navPage = 'storyCreate';
 
-$postCol -> remove();
+//$postCol -> remove();
 if(isset($_SESSION['user'])) {
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {

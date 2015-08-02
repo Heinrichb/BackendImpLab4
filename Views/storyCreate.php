@@ -16,7 +16,7 @@ include DIR_TMPL . '/navbar.php'; ?>
         <textarea class="storyText form-control" cols="60" rows="10" name="storyText"></textarea>
     </div>
     <div class="form-group btnHolder">
-        <input type="submit" value="Start Story" class="btn btn-default"/>
+        <input type="submit" value="Start Story" class="btn btn-primary pull-right"/>
     </div>
 </form>
 </div>

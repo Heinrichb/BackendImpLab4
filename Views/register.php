@@ -10,7 +10,7 @@ include DIR_TMPL . '/navbar.php'; ?>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="text" class="form-control" name="post[name]" id="name" placeholder="Name" required>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
             </div>
             <button type="submit" class="btn btn-primary pull-right">Submit</button>
         </form>

@@ -9,8 +9,9 @@ Router::add('/login', DIR_CTRL.'/login.php');
 Router::add('/logout', DIR_FUNC.'/logout.php');
 
 Router::add('/dashboard', DIR_CTRL.'/dashboard.php');
-Router::add('/edit/([a-zA-Z\d,])+', DIR_CTRL.'/storyEdit.php');
+Router::add('/story/55be99f39102a220a200002a', DIR_CTRL.'/storyEdit.php');
 Router::add('/create', DIR_CTRL.'/storyCreate.php');
+Router::add('/stories', DIR_CTRL.'/stories.php');
 
 //Router::add('#^/regex/(test1|test2|test3)/$#', DIR_CTRL.'/regex.php', Router::ROUTE_PCRE);
 //Router::add('#^/regex/[^/]+/$#', DIR_CTRL.'/regex.php', Router::ROUTE_PCRE);
