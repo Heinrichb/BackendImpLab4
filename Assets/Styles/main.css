@@ -110,12 +110,14 @@ html, body, .container{
 }
 
 .panel .panel-heading{
-    background: #FDB8FB;
+    background: #A85486;
+    color: white;
+    border: none;
 }
 
 .btn{
-    background: #FDB8FB;
-    color: #1a1a1a;
+    background: #A85486;
+    color: #FFF;
     border: none;
 }
 
