@@ -21,10 +21,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $postCol -> update(
             $story,
-            array('$set' => array("content" => $oldContent . "\r\n" . $content))
+            array('$set' => array("content" => $oldContent . "<br/><br/>" . $content))
 //            array("upsert" => true)
         );
-        header("Location: /story/55be99f39102a220a200002a");
+        header("Location: /story/". $story["_id"]);
     }
     else {
         header("Location: /login");

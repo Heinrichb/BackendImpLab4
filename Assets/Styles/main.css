@@ -79,8 +79,11 @@ html, body, .container{
     border-radius: 0px;
 }
 
-
 .navbar:hover{
+    color: white;
+}
+
+.nav .navbar-nav a:hover{
     color: white;
 }
 
@@ -107,14 +110,12 @@ html, body, .container{
 }
 
 .panel .panel-heading{
-    background: #A85486;
-    border-bottom: none;
-    color: #FFF;
+    background: #FDB8FB;
 }
 
 .btn{
-    background: #A85486;
-    color: #FFF;
+    background: #FDB8FB;
+    color: #1a1a1a;
     border: none;
 }
 

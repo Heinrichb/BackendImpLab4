@@ -1,6 +1,6 @@
 <?php
 
-$head['title'] = 'Dashboard';
+$head['title'] = 'Stories';
 $scripts = [];
 $styles = [];
 $navPage = 'stories';
