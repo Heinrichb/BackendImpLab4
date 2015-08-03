@@ -11,15 +11,15 @@
             <?php
             if(isset($_SESSION['user'])) {
                 echo '<li';
-                if ($navPage === "dashboard")  echo ' class="active"';
+                if ($navPage === "dashboard")  echo ' active';
                 echo '><a href="/dashboard">Dashboard</a></li>';
 
                 echo '<li';
-                if ($navPage === "storyCreate")  echo ' class="active"';
+                if ($navPage === "storyCreate")  echo ' active ';
                 echo '><a href="/create">Create Story</a></li>';
 
                 echo '<li';
-                if ($navPage === "stories")  echo ' class="active"';
+                if ($navPage === "stories")  echo ' active ';
                 echo '><a href="/stories">Stories</a></li>';
             }
             ?>
