@@ -33,16 +33,21 @@ include DIR_TMPL . '/navbar.php';
 
         <hr/>
 
-        <form method="post">
-            <div class="form-group">
-                <label for="addedText">Contribute To the Story</label>
-                <br>
-                <textarea class="storyText form-control" cols="60" rows="4" name="storyText"></textarea>
-            </div>
-            <div class="form-group btnHolder">
-                <input type="submit" value="Submit" class="btn btn-primary pull-right"/>
-            </div>
-        </form>
+        <?php
+        if(isset($_SESSION['user'])) {
+            echo '<form method="post">
+                <div class="form-group">
+                    <label for="addedText">Contribute To the Story</label>
+                    <br>
+                    <textarea class="storyText form-control" cols="60" rows="4" name="storyText"></textarea>
+                </div>
+                <div class="form-group btnHolder">
+                    <input type="submit" value="Submit" class="btn btn-primary pull-right"/>
+                </div>
+            </form>';
+        }
+        ?>
+
     </div>
 
 <?php include DIR_TMPL . '/footer.php'; ?>

@@ -7,7 +7,7 @@ include DIR_TMPL.'/navbar.php'; ?>
     foreach ($cursor as $post) {
         echo "<p>" . $post["title"] . "<br/>" . $post["content"] . '<br/>';
 
-        print_r($post["additions"]);
+//        print_r($post["additions"]);
 
         echo '</p>';
     }

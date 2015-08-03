@@ -3,7 +3,7 @@
 $head['title'] = 'Dashboard';
 $scripts = [];
 $styles = [];
-$navPage = 'dashboard';
+$navPage = 'stories';
 
 $post = array("title" => "", "content" => "", "poster_id" => 0101, "additions" => []);
 $cursor = $postCol -> find();
