@@ -8,7 +8,9 @@ include DIR_TMPL . '/navbar.php';
     <div>
         <?php
         foreach ($cursor as $post) {
-            echo '<p>' . $post["title"] . "<br/>" . $post["_id"] . '</p>' ;
+            echo '<a href="/story/' . $post["_id"] . '"><div class="col-sm-6 storyContainer">';
+                echo '<h2>' . $post["title"] . '</h2>';
+            echo '</div></a>';
         }
         ?>
     </div>
