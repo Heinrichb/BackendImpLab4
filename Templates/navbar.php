@@ -5,7 +5,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span></button>
-            <a href="/" class="navbar-brand">NAVBAR HEAER</a>
+            <a href="/" class="navbar-brand">Have I Got A Story For You</a>
         </div>
         <ul class="nav navbar-nav">
             <?php

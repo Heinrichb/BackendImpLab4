@@ -1,47 +1,43 @@
-/*.nav a {*/
-    /*display: inline;*/
-/*}*/
+.nav a {
+    display: inline;
+}
 
-/*div.main-Content {*/
-    /*max-width: 600px;*/
-    /*margin: auto;*/
-/*}*/
+div.main-Content {
+    max-width: 600px;
+    margin: auto;
+}
 
-/*div.main-Content > h3{*/
-    /*text-align: center;*/
-/*}*/
+div.main-Content > h3{
+    text-align: center;
+}
 
-/*div.form-group > textarea.storyText {*/
-    /*margin: auto;*/
-    /*display:block;*/
-    /*max-width: 100%;*/
-    /*min-width: 100%;*/
-/*}*/
+div.form-group > textarea.storyText {
+    margin: auto;
+    display:block;
+    max-width: 100%;
+    min-width: 100%;
+}
 
-/*form.register-form {*/
-    /*max-width: 300px;*/
-    /*margin: auto;*/
-/*}*/
+form.register-form {
+    max-width: 300px;
+    margin: auto;
+}
 
-/*form.register-form > input.btn {*/
-    /*text-align: center;*/
-/*}*/
+form.register-form > input.btn {
+    text-align: center;
+}
 
-/*div.btnHolder {*/
-    /*text-align: center;*/
-/*}#cont{*/
-    /*text-align: center;*/
-/*}*/
+div.btnHolder {
+    text-align: center;
+}#cont{
+    text-align: center;
+}
 
-/*.panel{*/
-    /*margin-top: 10px;*/
-/*}*/
-
-/*.nav {*/
-    /*border-radius: 0;*/
-    /*border: none;*/
-    /*margin: 0 0 15px;*/
-/*}*/
+.nav {
+    border-radius: 0;
+    border: none;
+    margin: 0 0 15px;
+}
 
 .mainContent {
     padding-top: 50px;
@@ -51,16 +47,71 @@
     width: 1200px;
     margin: 0 auto;
 }
-.navbar {
+
+.active {
+    background-color: #262626;
+}
+
+html, body, .container{
+    background: #262626;
+    color: #FFF;
+}
+
+.navbar{
+    background: #262626; /* Old browsers */
+    background: -moz-linear-gradient(top, #262626 0%, #1a1a1a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#262626), color-stop(100%,#1a1a1a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #262626 0%,#1a1a1a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #262626 0%,#1a1a1a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #262626 0%,#1a1a1a 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #262626 0%,#1a1a1a 100%);
+    border: #000;
+    color: #FFF;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
+}
+
+.navbar:hover{
+    color: white;
+}
+
+.nav .navbar-nav a:hover{
+    color: white;
 }
 
 .navbar-text {
     margin: 0px;
     padding: 15px;
 }
-.active {
-    background-color: #e7e7e7;
+
+.glyphicon{
+    color: #FDB8FB;
+}
+
+.jumbotron{
+    background: #1A1A1A;
+}
+.jumbotron h2{
+    color: #FDB8FB;
+}
+
+.panel{
+    background: #1a1a1a;
+    margin-top: 25px;
+    border: none;
+}
+
+.panel .panel-heading{
+    background: #FDB8FB;
+}
+
+.btn{
+    background: #FDB8FB;
+    color: #1a1a1a;
+    border: none;
+}
+
+#navbar-main a{
+    color: #FDB8FB;
 }

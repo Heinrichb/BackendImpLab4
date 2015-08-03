@@ -10,7 +10,6 @@
                   <p>info to draw you into the site</p>
             </div>
 
-
             <div class="row">
                   <div class="col-xs-6 col-md-4">
                         <h3>Sign Up</h3>
@@ -39,11 +38,11 @@
                   <div class="panel-heading">Panel heading</div>
                   <div class="panel-body">
                         <p>sample story blah blah </p>
+                        <p>Make panel heading a different color</p>
                   </div>
             </div>
 
       </div>
 </div
-
 
 <?php include DIR_TMPL . '/footer.php'; ?>
