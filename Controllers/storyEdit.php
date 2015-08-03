@@ -5,11 +5,11 @@ $scripts = [];
 $styles = [];
 $navPage = 'storyEdit';
 
-if(preg_match("(^/story/([A-Za-z0-9]+))", $_SERVER['REQUEST_URI'], $match)) {
-    $id = $match[1];
+if(URI_PART_1) {
+    $id = URI_PART_1;
     $mongoId = new MongoId($id);
     $story = $postCol -> findOne(array("_id" => $mongoId));
-    var_dump($story);
+//    var_dump($story);
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $postCol -> update(
             $story,
-            array('$set' => array("content" => $oldContent . $content))
+            array('$set' => array("content" => $oldContent . "\r\n" . $content))
 //            array("upsert" => true)
         );
         header("Location: /story/55be99f39102a220a200002a");

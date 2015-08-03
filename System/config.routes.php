@@ -9,7 +9,7 @@ Router::add('/login', DIR_CTRL.'/login.php');
 Router::add('/logout', DIR_FUNC.'/logout.php');
 
 Router::add('/dashboard', DIR_CTRL.'/dashboard.php');
-Router::add('/story/55be99f39102a220a200002a', DIR_CTRL.'/storyEdit.php');
+Router::add('#^/story/([a-zA-Z\d])+/$#', DIR_CTRL.'/storyEdit.php', Router::ROUTE_PCRE);
 Router::add('/create', DIR_CTRL.'/storyCreate.php');
 Router::add('/stories', DIR_CTRL.'/stories.php');
 
