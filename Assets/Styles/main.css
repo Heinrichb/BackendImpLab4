@@ -36,7 +36,14 @@ div.btnHolder {
 .nav {
     border-radius: 0;
     border: none;
-    margin: 0 0 15px;
+}
+
+.navbar-default .navbar-nav li a:hover{
+    color: #DDD;
+}
+
+.navbar-default .navbar-brand{
+    color: #DDD;
 }
 
 .mainContent {
@@ -72,11 +79,8 @@ html, body, .container{
     border-radius: 0px;
 }
 
-.navbar:hover{
-    color: white;
-}
 
-.nav .navbar-nav a:hover{
+.navbar:hover{
     color: white;
 }
 
@@ -103,13 +107,19 @@ html, body, .container{
 }
 
 .panel .panel-heading{
-    background: #FDB8FB;
+    background: #A85486;
+    border-bottom: none;
+    color: #FFF;
 }
 
 .btn{
-    background: #FDB8FB;
-    color: #1a1a1a;
+    background: #A85486;
+    color: #FFF;
     border: none;
+}
+
+.btn-default:hover{
+    background: #FDB8FB;
 }
 
 #navbar-main a{

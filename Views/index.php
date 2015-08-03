@@ -38,7 +38,6 @@
                   <div class="panel-heading">Panel heading</div>
                   <div class="panel-body">
                         <p>sample story blah blah </p>
-                        <p>Make panel heading a different color</p>
                   </div>
             </div>
 
